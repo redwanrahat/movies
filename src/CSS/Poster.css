@@ -1,0 +1,39 @@
+.posterContainer{
+    float: left;
+    padding: 0 5px 5px 0;
+    animation-name: 'popIn';
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+@keyframes popIn{
+    0% {transform: scale(0)}
+    to {transform: scale(1.5)}
+}
+
+.movies{
+    position: absolute;
+    top: 85vh;
+    left: 5vw;
+    right: 5vw;  
+}
+
+.overlay{
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.image:hover{ 
+    opacity: .3;
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: transform .3s;
+}
+
+.play{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
